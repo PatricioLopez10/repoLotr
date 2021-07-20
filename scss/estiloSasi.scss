@@ -88,6 +88,7 @@ body{
                 }
             }
             .artTres{
+                width: 100%;
                 h3{
                     text-align: center;
                 }
@@ -95,23 +96,21 @@ body{
                     display:flex;
                     width: 100%;
                     margin: 0%;
-                    .col-8{
+                    .col{
                         display:flex;
                         justify-content:center;
                         padding: 10px;
                         margin: 0%;
-                        width: 65%;
                         p{
                             display: flex;
                             flex-wrap: wrap;
                             text-align: start;
                         }
                     }
-                    .col-4{
+                    .col{
                         display: flex;
                         justify-content: center;
                         margin: 0;
-                        width: 35%;
                     }
                 }
                 
@@ -130,16 +129,7 @@ body{
         background-image: linear-gradient (rgba 0, 0, 0, 0.623,black);
         height: 80px;
         width: 100%;
-        p{
-            display: flex;
-            color: white;
-            font-size: 20px;
-            text-align: start;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-        }
-        .redes{     
+        .redes{
             height: auto;
             width: 100%;
             ul{
@@ -147,7 +137,7 @@ body{
                 justify-content: flex-end;
                 &:hover a{
                     filter: blur(1px);
-                }     
+                }
                 li{
                     display: inline-block;
                     justify-content: end;
@@ -193,7 +183,16 @@ body{
                     }
                 }
             }
-        
+            .copy{
+                p{
+                    color: white;
+                    font-size: 20px;
+                    text-align: start;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                }
+            }
         }
     }
     }
