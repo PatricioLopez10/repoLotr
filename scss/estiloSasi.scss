@@ -1,0 +1,301 @@
+/*Estilo GENERALES*/
+* { margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*INDEX*/
+
+body{
+    background-color: black;
+    header{
+        .navbar{
+            height: 100px;
+            background-color: black;
+            background-image: linear-gradient(black,gray);
+            .container-fluid{
+                height: 60px;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            div{
+                a{
+                    img{
+                        width: 130px;
+                        border-radius: 20%;
+                    }
+                }
+            }   
+        }
+        .banner{
+            width: 84,5rem;
+            video{
+                margin: 0;
+                padding: 5px;
+                box-sizing: border-box;
+                width: 100%;
+                height: 80%;
+                top: 0%;
+            }
+        }
+        
+    }
+    
+    main{
+        .contenedor{
+            .articuloUno{
+                border-top: 4px solid #c90;
+                border-right: 4px solid #c90;
+                border-left: 4px solid #c90;
+                border-bottom: 2px solid #c90;
+                .tituloUno{
+                    font-size: 30px;
+                    color: white;
+                    text-align: center;
+                    padding: 5px;
+                }
+                .imgUno{
+                    width: 100%;
+                    padding: 10px;
+                }
+                p{
+                    color: white;
+                    font-size: 20px;
+                    padding: 15px;
+                    border-top: 4px solid #c90;
+                }
+            }
+            .articuloDos{
+                border-top: 2px solid #c90;
+                border-right: 4px solid #c90;
+                border-left: 4px solid #c90;
+                border-bottom: 4px solid #c90;
+                .tituloDos{
+                    font-size: 25px;
+                    color: white;
+                    padding: 5px;
+                    text-align: center;
+                }
+                .imgDos{
+                    width: 100%;
+                    padding: 10px;
+                }
+                p{
+                    color: white;
+                    padding: 15px;
+                    font-size: 20px;
+                    border-top: 4px solid #c90;
+                }
+            }
+            .artTres{
+                h3{
+                    text-align: center;
+                }
+                .row{
+                    display:flex;
+                    width: 100%;
+                    margin: 0%;
+                    .col-8{
+                        display:flex;
+                        justify-content:center;
+                        padding: 10px;
+                        margin: 0%;
+                        width: 65%;
+                        p{
+                            display: flex;
+                            flex-wrap: wrap;
+                            text-align: start;
+                        }
+                    }
+                    .col-4{
+                        display: flex;
+                        justify-content: center;
+                        margin: 0;
+                        width: 35%;
+                    }
+                }
+                
+            }
+        }
+
+    }
+    
+.separador{
+    background: url(/imagenes/separador.png);
+    top: 0%;
+    padding-top: 90px;
+    footer{
+        background-color: rgba (0, 0, 0, 0.623);
+        background-color: black;
+        background-image: linear-gradient (rgba 0, 0, 0, 0.623,black);
+        height: 80px;
+        width: 100%;
+        p{
+            display: flex;
+            color: white;
+            font-size: 20px;
+            text-align: start;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .redes{     
+            height: auto;
+            width: 100%;
+            ul{
+                display: flex;
+                justify-content: flex-end;
+                &:hover a{
+                    filter: blur(1px);
+                }     
+                li{
+                    display: inline-block;
+                    justify-content: end;
+                    margin: 0 5px;
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    a{
+                        display: block;
+                        padding: 0 10px;
+                        background: #333;
+                        color: white;
+                        height: 50px;
+                        font-size: 30px;
+                        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+                        transition: .2s;
+                        border: 1px white solid;
+                        border-radius: 20px;    
+                        &:hover{
+                            transform: translate(-3px) scale(1.3);
+                            box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.2);
+                            filter: none;
+                        }
+                    }
+                &{
+                .facebook:hover{
+                    background-color:#3b5998;
+                }
+                }
+                &{
+                    .instagram:hover{
+                        background:radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+                    }
+                } 
+                &{
+                    .twitter:hover{
+                        background-color:#00acee;
+                    }
+                }
+                &{
+                    .linkedin:hover{
+                        background-color:#0e76a8;
+                    }
+                }
+            }
+        
+        }
+    }
+    }
+}
+}    
+/*INDEX*/
+
+/*PELICULAS*/
+body{
+    .contenedorPeliculas{
+        .tituloPeliculas{
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+        ol{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            li{
+                list-style:decimal;
+                color: white;
+                font-size: 30px;
+                a{
+                    font-family: fuentelotr !important;
+                    text-decoration: none;
+                    font-size: 30px;
+                    font-weight:normal;
+                    margin-left: 10px;
+                    background-color: rgba(255, 255, 255, 0.020)
+                }
+            }
+        }
+        .slide{
+            margin: auto;
+            width:85%;
+            border-top: 4px solid #c90;
+            border-right: 4px solid #c90;
+            border-bottom: 4px solid #c90;
+            border-left: 4px solid #c90;
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        height: 100%;
+                        
+                    }
+                }
+            }
+        }
+    }
+    #parrafoPeliculas{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgba(255, 255, 255, 0.089);
+        margin-top: 10px;
+        border-top: 4px solid #c90;
+        border-right: 4px solid #c90;
+        border-bottom: 4px solid #c90;
+        border-left: 4px solid #c90;
+    }
+}
+/*PELICULAS*/
+/*COMUNIDAD DEL ANILLO*/
+.contenedorPelis{
+    h1{
+        text-align: center;
+    }
+    .row{
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0%;
+        padding: 10px;
+        .col-9{
+            display: flex;
+            justify-content: center;
+            padding: 3px;
+            width:75%;
+            iframe{
+                width: 95%;
+            }
+        }
+        .col-3{
+            display: flex;
+            padding: 0;
+            width: 25%;
+            .portada{
+                width: 100%;
+            }
+        }
+    }
+    p{
+        text-align: center;
+        padding: 5px;
+    }
+}   
+/*COMUNIDAD DEL ANILLO*/
+
+/*GALERIA*/
+
+
+
+
+
+/*GALERIA*/

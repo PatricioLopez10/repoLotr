@@ -1,0 +1,218 @@
+/*Estilo GENERALES*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+/*INDEX*/
+body {
+  background-color: black; }
+  body header .navbar {
+    height: 100px;
+    background-color: black;
+    background-image: linear-gradient(black, gray); }
+    body header .navbar .container-fluid {
+      height: 60px;
+      padding-right: 20px;
+      padding-left: 20px; }
+    body header .navbar div a img {
+      width: 130px;
+      border-radius: 20%; }
+  body header .banner {
+    width: 84,5rem; }
+    body header .banner video {
+      margin: 0;
+      padding: 5px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 80%;
+      top: 0%; }
+  body main .contenedor .articuloUno {
+    border-top: 4px solid #c90;
+    border-right: 4px solid #c90;
+    border-left: 4px solid #c90;
+    border-bottom: 2px solid #c90; }
+    body main .contenedor .articuloUno .tituloUno {
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      padding: 5px; }
+    body main .contenedor .articuloUno .imgUno {
+      width: 100%;
+      padding: 10px; }
+    body main .contenedor .articuloUno p {
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+      border-top: 4px solid #c90; }
+  body main .contenedor .articuloDos {
+    border-top: 2px solid #c90;
+    border-right: 4px solid #c90;
+    border-left: 4px solid #c90;
+    border-bottom: 4px solid #c90; }
+    body main .contenedor .articuloDos .tituloDos {
+      font-size: 25px;
+      color: white;
+      padding: 5px;
+      text-align: center; }
+    body main .contenedor .articuloDos .imgDos {
+      width: 100%;
+      padding: 10px; }
+    body main .contenedor .articuloDos p {
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      border-top: 4px solid #c90; }
+  body main .contenedor .artTres h3 {
+    text-align: center; }
+  body main .contenedor .artTres .row {
+    display: flex;
+    width: 100%;
+    margin: 0%; }
+    body main .contenedor .artTres .row .col-8 {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      margin: 0%;
+      width: 65%; }
+      body main .contenedor .artTres .row .col-8 p {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: start; }
+    body main .contenedor .artTres .row .col-4 {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      width: 35%; }
+  body .separador {
+    background: url(/imagenes/separador.png);
+    top: 0%;
+    padding-top: 90px; }
+    body .separador footer {
+      background-color: rgba 0, 0, 0, 0.623;
+      background-color: black;
+      background-image: linear-gradient rgba 0, 0, 0, 0.623, black;
+      height: 80px;
+      width: 100%; }
+      body .separador footer p {
+        display: flex;
+        color: white;
+        font-size: 20px;
+        text-align: start;
+        justify-content: center;
+        align-items: center;
+        align-content: center; }
+      body .separador footer .redes {
+        height: auto;
+        width: 100%; }
+        body .separador footer .redes ul {
+          display: flex;
+          justify-content: flex-end; }
+          body .separador footer .redes ul:hover a {
+            filter: blur(1px); }
+          body .separador footer .redes ul li {
+            display: inline-block;
+            justify-content: end;
+            margin: 0 5px;
+            width: 50px;
+            height: 50px;
+            text-align: center; }
+            body .separador footer .redes ul li a {
+              display: block;
+              padding: 0 10px;
+              background: #333;
+              color: white;
+              height: 50px;
+              font-size: 30px;
+              box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+              transition: .2s;
+              border: 1px white solid;
+              border-radius: 20px; }
+              body .separador footer .redes ul li a:hover {
+                transform: translate(-3px) scale(1.3);
+                box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.2);
+                filter: none; }
+            body .separador footer .redes ul li .facebook:hover {
+              background-color: #3b5998; }
+            body .separador footer .redes ul li .instagram:hover {
+              background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); }
+            body .separador footer .redes ul li .twitter:hover {
+              background-color: #00acee; }
+            body .separador footer .redes ul li .linkedin:hover {
+              background-color: #0e76a8; }
+
+/*INDEX*/
+/*PELICULAS*/
+body .contenedorPeliculas .tituloPeliculas {
+  font-size: 20px;
+  text-align: center;
+  color: white; }
+
+body .contenedorPeliculas ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  body .contenedorPeliculas ol li {
+    list-style: decimal;
+    color: white;
+    font-size: 30px; }
+    body .contenedorPeliculas ol li a {
+      font-family: fuentelotr !important;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: normal;
+      margin-left: 10px;
+      background-color: rgba(255, 255, 255, 0.02); }
+
+body .contenedorPeliculas .slide {
+  margin: auto;
+  width: 85%;
+  border-top: 4px solid #c90;
+  border-right: 4px solid #c90;
+  border-bottom: 4px solid #c90;
+  border-left: 4px solid #c90; }
+  body .contenedorPeliculas .slide .carousel-inner .carousel-item img {
+    height: 100%; }
+
+body #parrafoPeliculas {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.089);
+  margin-top: 10px;
+  border-top: 4px solid #c90;
+  border-right: 4px solid #c90;
+  border-bottom: 4px solid #c90;
+  border-left: 4px solid #c90; }
+
+/*PELICULAS*/
+/*COMUNIDAD DEL ANILLO*/
+.contenedorPelis h1 {
+  text-align: center; }
+
+.contenedorPelis .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0%;
+  padding: 10px; }
+  .contenedorPelis .row .col-9 {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    width: 75%; }
+    .contenedorPelis .row .col-9 iframe {
+      width: 95%; }
+  .contenedorPelis .row .col-3 {
+    display: flex;
+    padding: 0;
+    width: 25%; }
+    .contenedorPelis .row .col-3 .portada {
+      width: 100%; }
+
+.contenedorPelis p {
+  text-align: center;
+  padding: 5px; }
+
+/*COMUNIDAD DEL ANILLO*/
+/*GALERIA*/
+/*GALERIA*/
