@@ -132,7 +132,7 @@ body{
     }
     
 .separador{
-    background: url(./imagenes/separador.png);
+    background: url(../separador.png);
     top: 0%;
     padding-top: 90px;
     footer{
@@ -320,7 +320,7 @@ body{
                     color: white;
                 }
             }
-            .galeria{
+            .row .galeria{
                 .col{
                     margin-bottom: 20px;
                     .material-placeholder{
