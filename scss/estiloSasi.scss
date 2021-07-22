@@ -16,7 +16,7 @@
 
 $colorTitulo:#FC0;
 $paddingTitulo:15px;
-$tamañoTitulo:50px;
+$tamañoTitulo:40px;
 $fuente:fuentelotr;
 /*↑↑↑ VARIABLES ↑↑↑*/
 
@@ -41,7 +41,7 @@ body{
                     width: 65%;
                     display: flex;
                     flex-wrap: wrap;
-                    font-size: 35px;
+                    font-size: 25px;
                     color: $colorTitulo;
                     text-decoration: none;
                 }
@@ -49,6 +49,14 @@ body{
                     font-family: $fuente;
                     font-size: 22px;
                 }
+            }
+            .collapse .navbar-collapse{
+                background: rgb(59, 59, 59);
+                padding: 20px;
+                position: absolute;
+                top: 100px;
+                width: 100%;
+                left: 0px;
             }
         }
         .banner{
@@ -75,7 +83,7 @@ body{
                 border-bottom: 2px solid #c90;
                 .tituloUno{
                     color: $colorTitulo;
-                    font-size:$tamañoTitulo;
+                    font-size: 40px;
                     font-family: $fuente;
                     text-align: center;
                     padding: 15px;
@@ -250,6 +258,7 @@ body{
         font-size: 30px;
         text-align: center;
         color: white;
+        margin: 15px;
     }
     ol{
         display: flex;
@@ -347,10 +356,11 @@ body{
     .h1{
         font-family: $fuente;
         padding: $paddingTitulo;
-        font-size: 50px;
+        font-size: 45px;
         text-transform: uppercase;
         letter-spacing: 5px;
         text-align: center;
+        margin:10px;
     }
     .row{
         .contenedorFlex{
@@ -363,13 +373,13 @@ body{
         }
         .galeria{
             .contenedorFlex{
-                margin-bottom: 15px;
+                margin-bottom: 10px;
                 .material-placeholder{
                     img{
                         box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
                         border-radius: 15px;
                         .materialbox-caption{
-                            bottom: 30px;
+                            bottom: 25px;
                             right: 0;
                             width: 40%;
                             height: auto;
@@ -395,7 +405,7 @@ body{
 }
 @media screen and (max-width: 992px){
     .materialbox-caption{
-        width: 70%;
+        width: 70;
     }
 }
 
@@ -409,6 +419,7 @@ body{
         text-transform: uppercase;
         letter-spacing: 4px;
         text-align: center;
+        margin: 15px;
     }
     table{
         tr{
