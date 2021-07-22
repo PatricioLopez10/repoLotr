@@ -1,8 +1,16 @@
-/*Estilo GENERALES*/
+/*ESTILOS GENERALES*/
 * { margin:0px;
     padding: 0px;
     box-sizing: border-box;
 }
+/*ESTILOS GENERALES*/
+
+/*INICIO FUENTE*/
+@font-face {
+    font-family: fuentelotr;
+    src: url(Fuente/fuente.ttf); 
+}
+/* FIN FUENTE*/
 
 /*INDEX*/
 
@@ -344,3 +352,38 @@ body{
 }
 
 /*GALERIA*/
+
+/*PERSONAJES*/
+
+body{
+    main{
+        .contenedorPersonajes{
+            background: black;
+            table{
+                h1{
+                    
+                }
+                tr{
+                    td{
+                        border: 2px black solid;
+                        color: white;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        font-weight: lighter;
+                        text-align: center;
+                        .zoom:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/*PERSONAJES*/
+
