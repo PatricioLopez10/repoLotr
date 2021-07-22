@@ -1,10 +1,20 @@
-/*Estilo GENERALES*/
+@charset "UTF-8";
+/*↓↓↓ ESTILOS GENERALES ↓↓↓*/
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; }
 
-/*INDEX*/
+/*↑↑↑ ESTILOS GENERALES ↑↑↑*/
+/*↓↓↓ INICIO FUENTE ↓↓↓*/
+@font-face {
+  font-family: fuentelotr;
+  src: url(Fuente/fuente.ttf); }
+
+/*↑↑↑ FIN FUENTE ↑↑↑*/
+/*↓↓↓ VARIABLES ↓↓↓*/
+/*↑↑↑ VARIABLES ↑↑↑*/
+/*↓↓↓ INDEX ↓↓↓*/
 body {
   background-color: black; }
   body header .navbar {
@@ -15,8 +25,10 @@ body {
       height: 60px;
       padding-right: 20px;
       padding-left: 20px; }
+      body header .navbar .container-fluid a img {
+        width: 55%; }
     body header .navbar div a img {
-      width: 130px;
+      width: 135px;
       border-radius: 20%; }
   body header .banner {
     width: 84,5rem; }
@@ -63,45 +75,38 @@ body {
       padding: 15px;
       font-size: 20px;
       border-top: 4px solid #c90; }
-  body main .contenedor .artTres h3 {
-    text-align: center; }
-  body main .contenedor .artTres .row {
-    display: flex;
-    width: 100%;
-    margin: 0%; }
-    body main .contenedor .artTres .row .col-8 {
+  body main .contenedor .artTres {
+    width: 100%; }
+    body main .contenedor .artTres h3 {
+      text-align: center; }
+    body main .contenedor .artTres .row {
       display: flex;
-      justify-content: center;
-      padding: 10px;
-      margin: 0%;
-      width: 65%; }
-      body main .contenedor .artTres .row .col-8 p {
+      width: 100%;
+      margin: 0%; }
+      body main .contenedor .artTres .row .col {
         display: flex;
-        flex-wrap: wrap;
-        text-align: start; }
-    body main .contenedor .artTres .row .col-4 {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      width: 35%; }
+        justify-content: center;
+        padding: 10px;
+        margin: 0%; }
+        body main .contenedor .artTres .row .col p {
+          display: flex;
+          flex-wrap: wrap;
+          text-align: start; }
+      body main .contenedor .artTres .row .col {
+        display: flex;
+        justify-content: center;
+        margin: 0; }
   body .separador {
-    background: url(/imagenes/separador.png);
+    background: url(../separador.png);
     top: 0%;
-    padding-top: 90px; }
+    padding-top: 90px;
+    margin: 0%; }
     body .separador footer {
       background-color: rgba 0, 0, 0, 0.623;
       background-color: black;
       background-image: linear-gradient rgba 0, 0, 0, 0.623, black;
       height: 80px;
       width: 100%; }
-      body .separador footer p {
-        display: flex;
-        color: white;
-        font-size: 20px;
-        text-align: start;
-        justify-content: center;
-        align-items: center;
-        align-content: center; }
       body .separador footer .redes {
         height: auto;
         width: 100%; }
@@ -140,23 +145,30 @@ body {
               background-color: #00acee; }
             body .separador footer .redes ul li .linkedin:hover {
               background-color: #0e76a8; }
+          body .separador footer .redes ul .copy p {
+            color: white;
+            font-size: 20px;
+            text-align: start;
+            justify-content: center;
+            align-items: center;
+            align-content: center; }
 
-/*INDEX*/
-/*PELICULAS*/
-body .contenedorPeliculas .tituloPeliculas {
+/*↑↑↑ INDEX ↑↑↑*/
+/*↓↓↓ PELICULAS ↓↓↓*/
+.contenedorPeliculas .tituloPeliculas {
   font-size: 20px;
   text-align: center;
   color: white; }
 
-body .contenedorPeliculas ol {
+.contenedorPeliculas ol {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
-  body .contenedorPeliculas ol li {
+  .contenedorPeliculas ol li {
     list-style: decimal;
     color: white;
     font-size: 30px; }
-    body .contenedorPeliculas ol li a {
+    .contenedorPeliculas ol li a {
       font-family: fuentelotr !important;
       text-decoration: none;
       font-size: 30px;
@@ -164,17 +176,17 @@ body .contenedorPeliculas ol {
       margin-left: 10px;
       background-color: rgba(255, 255, 255, 0.02); }
 
-body .contenedorPeliculas .slide {
+.contenedorPeliculas .slide {
   margin: auto;
   width: 85%;
   border-top: 4px solid #c90;
   border-right: 4px solid #c90;
   border-bottom: 4px solid #c90;
   border-left: 4px solid #c90; }
-  body .contenedorPeliculas .slide .carousel-inner .carousel-item img {
+  .contenedorPeliculas .slide .carousel-inner .carousel-item img {
     height: 100%; }
 
-body #parrafoPeliculas {
+#parrafoPeliculas {
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgba(255, 255, 255, 0.089);
@@ -184,8 +196,8 @@ body #parrafoPeliculas {
   border-bottom: 4px solid #c90;
   border-left: 4px solid #c90; }
 
-/*PELICULAS*/
-/*COMUNIDAD DEL ANILLO*/
+/*↑↑↑ PELICULAS ↑↑↑*/
+/*↓↓↓ ESTILO TRILOGIA ↓↓↓*/
 .contenedorPelis h1 {
   text-align: center; }
 
@@ -213,6 +225,57 @@ body #parrafoPeliculas {
   text-align: center;
   padding: 5px; }
 
-/*COMUNIDAD DEL ANILLO*/
-/*GALERIA*/
-/*GALERIA*/
+/*↑↑↑ ESTILO TRILOGIA ↑↑↑*/
+/*↓↓↓ GALERIA ↓↓↓*/
+.contenedorGaleria h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center; }
+
+.contenedorGaleria .row .contenedorFlex .tituloGaleria {
+  color: white;
+  text-align: center; }
+
+.contenedorGaleria .row .galeria .contenedorFlex {
+  margin-bottom: 15px; }
+  .contenedorGaleria .row .galeria .contenedorFlex .material-placeholder img {
+    box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.6);
+    border-radius: 15px; }
+    .contenedorGaleria .row .galeria .contenedorFlex .material-placeholder img .materialbox-caption {
+      bottom: 30px;
+      right: 0;
+      width: 40%;
+      height: auto;
+      padding: 10px;
+      margin: auto;
+      background: #000;
+      box-shadow: 5px 5px #fff;
+      font-size: 20px;
+      color: #fff;
+      line-height: 28px; }
+
+@media screen and (max-width: 600px) {
+  .materialbox-caption {
+    width: 90%; } }
+
+@media screen and (max-width: 992px) {
+  .materialbox-caption {
+    width: 70%; } }
+
+/*↑↑↑ GALERIA ↑↑↑*/
+/*↓↓↓ PERSONAJES ↓↓↓*/
+.contenedorPersonajes {
+  background: black; }
+  .contenedorPersonajes table h1 {
+    color: white; }
+  .contenedorPersonajes table tr td {
+    border: 2px black solid;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    text-align: center; }
+    .contenedorPersonajes table tr td .zoom:hover {
+      transform: scale(1.1); }
+
+/*↑↑↑ PERSONAJES ↑↑↑*/

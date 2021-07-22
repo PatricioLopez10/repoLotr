@@ -29,6 +29,11 @@ body{
                 height: 60px;
                 padding-right: 20px;
                 padding-left: 20px;
+                a{
+                    img{
+                        width: 55%;
+                    }
+                }
             }
             div{
                 a{
@@ -135,6 +140,7 @@ body{
     background: url(../separador.png);
     top: 0%;
     padding-top: 90px;
+    margin: 0%;
     footer{
         background-color: rgba (0, 0, 0, 0.623);
         background-color: black;
@@ -213,59 +219,59 @@ body{
 /*↑↑↑ INDEX ↑↑↑*/
 
 /*↓↓↓ PELICULAS ↓↓↓*/
-body{
-    .contenedorPeliculas{
-        .tituloPeliculas{
-            font-size: 20px;
-            text-align: center;
+
+.contenedorPeliculas{
+    .tituloPeliculas{
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+    ol{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        li{
+            list-style:decimal;
             color: white;
-        }
-        ol{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content:space-around;
-            li{
-                list-style:decimal;
-                color: white;
+            font-size: 30px;
+            a{
+                font-family: fuentelotr !important;
+                text-decoration: none;
                 font-size: 30px;
-                a{
-                    font-family: fuentelotr !important;
-                    text-decoration: none;
-                    font-size: 30px;
-                    font-weight:normal;
-                    margin-left: 10px;
-                    background-color: rgba(255, 255, 255, 0.020)
-                }
-            }
-        }
-        .slide{
-            margin: auto;
-            width:85%;
-            border-top: 4px solid #c90;
-            border-right: 4px solid #c90;
-            border-bottom: 4px solid #c90;
-            border-left: 4px solid #c90;
-            .carousel-inner{
-                .carousel-item{
-                    img{
-                        height: 100%;
-                        
-                    }
-                }
+                font-weight:normal;
+                margin-left: 10px;
+                background-color: rgba(255, 255, 255, 0.020)
             }
         }
     }
-    #parrafoPeliculas{
-        color: white;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        background-color: rgba(255, 255, 255, 0.089);
-        margin-top: 10px;
+    .slide{
+        margin: auto;
+        width:85%;
         border-top: 4px solid #c90;
         border-right: 4px solid #c90;
         border-bottom: 4px solid #c90;
         border-left: 4px solid #c90;
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    height: 100%;
+                    
+                }
+            }
+        }
     }
 }
+#parrafoPeliculas{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.089);
+    margin-top: 10px;
+    border-top: 4px solid #c90;
+    border-right: 4px solid #c90;
+    border-bottom: 4px solid #c90;
+    border-left: 4px solid #c90;
+}
+
 /*↑↑↑ PELICULAS ↑↑↑*/
 
 /*↓↓↓ ESTILO TRILOGIA ↓↓↓*/
@@ -306,47 +312,46 @@ body{
 
 /*↓↓↓ GALERIA ↓↓↓*/
 
-body{
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-    .contenedorGaleria{
-        h1{
-            font-size: 55px;
-            text-transform: uppercase;
-            letter-spacing: 7px;
-        }
-        .row{
-            .col .s12 .contenedorFlex{
-                .tituloGaleria{
-                    color: white;
-                }
+.contenedorGaleria{
+    h1{
+        font-size: 50px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+    .row{
+        .contenedorFlex{
+            .tituloGaleria{
+                color: white;
+                text-align: center;
             }
-            .row .galeria{
-                .col{
-                    margin-bottom: 20px;
-                    .material-placeholder{
-                        img{
-                            box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
-                            border-radius: 15px;
-                            .materialbox-caption{
-                                bottom: 30px;
-                                right: 0;
-                                width: 40%;
-                                height: auto;
-                                padding: 10px;
-                                margin: auto;
-                                background: #000;
-                                box-shadow: 5px 5px #fff;
-                                font-size: 20px;
-                                color: #fff;
-                                line-height: 28px;
-                            }
+        }
+        .galeria{
+            .contenedorFlex{
+                margin-bottom: 15px;
+                .material-placeholder{
+                    img{
+                        box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
+                        border-radius: 15px;
+                        .materialbox-caption{
+                            bottom: 30px;
+                            right: 0;
+                            width: 40%;
+                            height: auto;
+                            padding: 10px;
+                            margin: auto;
+                            background: #000;
+                            box-shadow: 5px 5px #fff;
+                            font-size: 20px;
+                            color: #fff;
+                            line-height: 28px;
                         }
                     }
                 }
-            
-            }    
-        } 
-    }
+            }
+        
+        }    
+    } 
 }
 @media screen and (max-width: 600px){
     .materialbox-caption{
@@ -362,26 +367,21 @@ body{
 /*↑↑↑ GALERIA ↑↑↑*/
 
 /*↓↓↓ PERSONAJES ↓↓↓*/
-
-body{
-    main{
-        .contenedorPersonajes{
-            background: black;
-            table{
-                h1{
-                    color: white;
-                }
-                tr{
-                    td{
-                        border: 2px black solid;
-                        color: white;
-                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                        font-weight: lighter;
-                        text-align: center;
-                        .zoom:hover{
-                            transform: scale(1.1);
-                        }
-                    }
+.contenedorPersonajes{
+    background: black;
+    table{
+        h1{
+            color: white;
+        }
+        tr{
+            td{
+                border: 2px black solid;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: lighter;
+                text-align: center;
+                .zoom:hover{
+                    transform: scale(1.1);
                 }
             }
         }
