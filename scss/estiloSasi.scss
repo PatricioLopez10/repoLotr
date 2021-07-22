@@ -8,12 +8,16 @@
 /*↓↓↓ INICIO FUENTE ↓↓↓*/
 @font-face {
     font-family: fuentelotr;
-    src: url(Fuente/fuente.ttf); 
+    src: url(fuente.ttf); 
 }
 /*↑↑↑ FIN FUENTE ↑↑↑*/
 
 /*↓↓↓ VARIABLES ↓↓↓*/
 
+$colorTitulo:#FC0;
+$paddingTitulo:15px;
+$tamañoTitulo:50px;
+$fuente:fuentelotr;
 /*↑↑↑ VARIABLES ↑↑↑*/
 
 /*↓↓↓ INDEX ↓↓↓*/
@@ -26,23 +30,26 @@ body{
             background-color: black;
             background-image: linear-gradient(black,gray);
             .container-fluid{
+                width: 100%;
                 height: 60px;
                 padding-right: 20px;
                 padding-left: 20px;
+                img{
+                    width: 50px;
+                }
+                #nombrePag{
+                    width: 65%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 35px;
+                    color: $colorTitulo;
+                    text-decoration: none;
+                }
                 a{
-                    img{
-                        width: 55%;
-                    }
+                    font-family: $fuente;
+                    font-size: 22px;
                 }
             }
-            div{
-                a{
-                    img{
-                        width: 135px;
-                        border-radius: 20%;
-                    }
-                }
-            }   
         }
         .banner{
             width: 84,5rem;
@@ -60,16 +67,18 @@ body{
     
     main{
         .contenedor{
+            width: 100%;
             .articuloUno{
                 border-top: 4px solid #c90;
                 border-right: 4px solid #c90;
                 border-left: 4px solid #c90;
                 border-bottom: 2px solid #c90;
                 .tituloUno{
-                    font-size: 30px;
-                    color: white;
+                    color: $colorTitulo;
+                    font-size:$tamañoTitulo;
+                    font-family: $fuente;
                     text-align: center;
-                    padding: 5px;
+                    padding: 15px;
                 }
                 .imgUno{
                     width: 100%;
@@ -88,8 +97,9 @@ body{
                 border-left: 4px solid #c90;
                 border-bottom: 4px solid #c90;
                 .tituloDos{
-                    font-size: 25px;
-                    color: white;
+                    font-size: 35px;
+                    color:$colorTitulo;
+                    font-family: $fuente;
                     padding: 5px;
                     text-align: center;
                 }
@@ -106,22 +116,35 @@ body{
             }
             .artTres{
                 width: 100%;
+                border-top: 2px solid #c90;
+                border-right: 2px solid #c90;
+                border-left: 2px solid #c90;
+                border-bottom: 4px solid #c90;
                 h3{
+                    color: $colorTitulo;
+                    font-family: $fuente;
+                    padding:$paddingTitulo;
+                    font-size: 30px;
                     text-align: center;
                 }
                 .row{
                     display:flex;
                     width: 100%;
                     margin: 0%;
+
                     .col{
                         display:flex;
                         justify-content:center;
                         padding: 10px;
                         margin: 0%;
+                        
                         p{
                             display: flex;
                             flex-wrap: wrap;
                             text-align: start;
+                            color: white;
+                            font-size: 20px;
+                            padding: 15px;
                         }
                     }
                     .col{

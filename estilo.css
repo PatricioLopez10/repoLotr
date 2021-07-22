@@ -9,7 +9,7 @@
 /*↓↓↓ INICIO FUENTE ↓↓↓*/
 @font-face {
   font-family: fuentelotr;
-  src: url(Fuente/fuente.ttf); }
+  src: url(fuente.ttf); }
 
 /*↑↑↑ FIN FUENTE ↑↑↑*/
 /*↓↓↓ VARIABLES ↓↓↓*/
@@ -22,14 +22,22 @@ body {
     background-color: black;
     background-image: linear-gradient(black, gray); }
     body header .navbar .container-fluid {
+      width: 100%;
       height: 60px;
       padding-right: 20px;
       padding-left: 20px; }
-      body header .navbar .container-fluid a img {
-        width: 55%; }
-    body header .navbar div a img {
-      width: 135px;
-      border-radius: 20%; }
+      body header .navbar .container-fluid img {
+        width: 50px; }
+      body header .navbar .container-fluid #nombrePag {
+        width: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 35px;
+        color: #FC0;
+        text-decoration: none; }
+      body header .navbar .container-fluid a {
+        font-family: fuentelotr;
+        font-size: 22px; }
   body header .banner {
     width: 84,5rem; }
     body header .banner video {
@@ -39,63 +47,78 @@ body {
       width: 100%;
       height: 80%;
       top: 0%; }
-  body main .contenedor .articuloUno {
-    border-top: 4px solid #c90;
-    border-right: 4px solid #c90;
-    border-left: 4px solid #c90;
-    border-bottom: 2px solid #c90; }
-    body main .contenedor .articuloUno .tituloUno {
-      font-size: 30px;
-      color: white;
-      text-align: center;
-      padding: 5px; }
-    body main .contenedor .articuloUno .imgUno {
-      width: 100%;
-      padding: 10px; }
-    body main .contenedor .articuloUno p {
-      color: white;
-      font-size: 20px;
-      padding: 15px;
-      border-top: 4px solid #c90; }
-  body main .contenedor .articuloDos {
-    border-top: 2px solid #c90;
-    border-right: 4px solid #c90;
-    border-left: 4px solid #c90;
-    border-bottom: 4px solid #c90; }
-    body main .contenedor .articuloDos .tituloDos {
-      font-size: 25px;
-      color: white;
-      padding: 5px;
-      text-align: center; }
-    body main .contenedor .articuloDos .imgDos {
-      width: 100%;
-      padding: 10px; }
-    body main .contenedor .articuloDos p {
-      color: white;
-      padding: 15px;
-      font-size: 20px;
-      border-top: 4px solid #c90; }
-  body main .contenedor .artTres {
+  body main .contenedor {
     width: 100%; }
-    body main .contenedor .artTres h3 {
-      text-align: center; }
-    body main .contenedor .artTres .row {
-      display: flex;
+    body main .contenedor .articuloUno {
+      border-top: 4px solid #c90;
+      border-right: 4px solid #c90;
+      border-left: 4px solid #c90;
+      border-bottom: 2px solid #c90; }
+      body main .contenedor .articuloUno .tituloUno {
+        color: #FC0;
+        font-size: 50px;
+        font-family: fuentelotr;
+        text-align: center;
+        padding: 15px; }
+      body main .contenedor .articuloUno .imgUno {
+        width: 100%;
+        padding: 10px; }
+      body main .contenedor .articuloUno p {
+        color: white;
+        font-size: 20px;
+        padding: 15px;
+        border-top: 4px solid #c90; }
+    body main .contenedor .articuloDos {
+      border-top: 2px solid #c90;
+      border-right: 4px solid #c90;
+      border-left: 4px solid #c90;
+      border-bottom: 4px solid #c90; }
+      body main .contenedor .articuloDos .tituloDos {
+        font-size: 35px;
+        color: #FC0;
+        font-family: fuentelotr;
+        padding: 5px;
+        text-align: center; }
+      body main .contenedor .articuloDos .imgDos {
+        width: 100%;
+        padding: 10px; }
+      body main .contenedor .articuloDos p {
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+        border-top: 4px solid #c90; }
+    body main .contenedor .artTres {
       width: 100%;
-      margin: 0%; }
-      body main .contenedor .artTres .row .col {
+      border-top: 2px solid #c90;
+      border-right: 2px solid #c90;
+      border-left: 2px solid #c90;
+      border-bottom: 4px solid #c90; }
+      body main .contenedor .artTres h3 {
+        color: #FC0;
+        font-family: fuentelotr;
+        padding: 15px;
+        font-size: 30px;
+        text-align: center; }
+      body main .contenedor .artTres .row {
         display: flex;
-        justify-content: center;
-        padding: 10px;
+        width: 100%;
         margin: 0%; }
-        body main .contenedor .artTres .row .col p {
+        body main .contenedor .artTres .row .col {
           display: flex;
-          flex-wrap: wrap;
-          text-align: start; }
-      body main .contenedor .artTres .row .col {
-        display: flex;
-        justify-content: center;
-        margin: 0; }
+          justify-content: center;
+          padding: 10px;
+          margin: 0%; }
+          body main .contenedor .artTres .row .col p {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: start;
+            color: white;
+            font-size: 20px;
+            padding: 15px; }
+        body main .contenedor .artTres .row .col {
+          display: flex;
+          justify-content: center;
+          margin: 0; }
   body .separador {
     background: url(../separador.png);
     top: 0%;
