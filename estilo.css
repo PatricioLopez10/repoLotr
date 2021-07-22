@@ -224,7 +224,9 @@ body {
 /*↑↑↑ PELICULAS ↑↑↑*/
 /*↓↓↓ ESTILO TRILOGIA ↓↓↓*/
 .contenedorPelis h1 {
-  text-align: center; }
+  font-size: 50px;
+  text-align: center;
+  color: whitesmoke; }
 
 .contenedorPelis .row {
   display: flex;
@@ -247,6 +249,8 @@ body {
       width: 100%; }
 
 .contenedorPelis p {
+  color: white;
+  font-size: 15px;
   text-align: center;
   padding: 5px; }
 

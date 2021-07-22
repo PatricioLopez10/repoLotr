@@ -303,7 +303,9 @@ body{
 /*↓↓↓ ESTILO TRILOGIA ↓↓↓*/
 .contenedorPelis{
     h1{
+        font-size: $tamañoTitulo;
         text-align: center;
+        color: whitesmoke;
     }
     .row{
         display:flex;
@@ -330,6 +332,8 @@ body{
         }
     }
     p{
+        color: white;
+        font-size: 15px;
         text-align: center;
         padding: 5px;
     }
