@@ -315,10 +315,12 @@ body{
             letter-spacing: 7px;
         }
         .row{
-            .col{
-                .tituloGaleria{
-                    color: white;
-                }
+            div{
+                .contenedorFlex{
+                    .tituloGaleria{
+                        color: white;
+                    }
+            }
             }
             .row .galeria{
                 .col{
