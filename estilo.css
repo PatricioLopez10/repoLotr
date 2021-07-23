@@ -299,11 +299,15 @@ body {
 
 @media screen and (max-width: 600px) {
   .materialbox-caption {
-    width: 90%; } }
+    width: 90%; }
+  .galeria {
+    display: inline-block; } }
 
 @media screen and (max-width: 992px) {
   .materialbox-caption {
-    width: 70; } }
+    width: 70; }
+  .galeria {
+    display: inline-block; } }
 
 /*↑↑↑ GALERIA ↑↑↑*/
 /*↓↓↓ PERSONAJES ↓↓↓*/

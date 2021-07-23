@@ -402,10 +402,16 @@ body{
     .materialbox-caption{
         width: 90%;
     }
+    .galeria{
+        display: inline-block;
+    }
 }
 @media screen and (max-width: 992px){
     .materialbox-caption{
         width: 70;
+    }
+    .galeria{
+        display: inline-block;
     }
 }
 
