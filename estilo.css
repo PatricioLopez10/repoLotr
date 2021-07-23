@@ -323,7 +323,8 @@ body {
     border: 3 white solid;
     color: white;
     font-weight: lighter;
-    text-align: center; }
+    text-align: center;
+    padding: 10px; }
     .contenedorPersonajes table tr td:hover {
       transform: scale(1.1); }
 

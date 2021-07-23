@@ -434,8 +434,10 @@ body{
                 color:white;
                 font-weight: lighter;
                 text-align: center;
+                padding: 10px;
                 &:hover{
                     transform: scale(1.1);
+                
                 }
             }
         }
