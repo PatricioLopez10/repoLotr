@@ -14,18 +14,24 @@
 /*↑↑↑ FIN FUENTE ↑↑↑*/
 /*↓↓↓ VARIABLES ↓↓↓*/
 /*↑↑↑ VARIABLES ↑↑↑*/
+/*↓↓↓ MIXIN ↓↓↓*/
+/*↑↑↑ MIXIN ↑↑↑*/
+/*↓↓↓ EXTEND ↓↓↓*/
+.anchoImagenArt, body main .contenedor .articuloUno .imgUno, body main .contenedor .articuloDos .imgDos {
+  width: 100%;
+  padding: 10px; }
+
+/*↑↑↑ EXTEND ↑↑↑*/
 /*↓↓↓ INDEX ↓↓↓*/
 body {
   background-color: black; }
   body header .navbar {
-    height: 100px;
     background-color: black;
     background-image: linear-gradient(black, gray); }
     body header .navbar .container-fluid {
       width: 100%;
-      height: 60px;
-      padding-right: 20px;
-      padding-left: 20px; }
+      padding-right: 0;
+      padding-left: 0; }
       body header .navbar .container-fluid img {
         width: 50px; }
       body header .navbar .container-fluid #nombrePag {
@@ -45,8 +51,6 @@ body {
       top: 100px;
       width: 100%;
       left: 0px; }
-      body header .navbar .collapse .navbar-collapse .listas {
-        width: 100%; }
   body header .banner {
     width: 84,5rem; }
     body header .banner video {
@@ -69,9 +73,6 @@ body {
         font-family: fuentelotr;
         text-align: center;
         padding: 15px; }
-      body main .contenedor .articuloUno .imgUno {
-        width: 100%;
-        padding: 10px; }
       body main .contenedor .articuloUno p {
         color: white;
         font-size: 20px;
@@ -81,16 +82,13 @@ body {
       border-top: 2px solid #c90;
       border-right: 4px solid #c90;
       border-left: 4px solid #c90;
-      border-bottom: 4px solid #c90; }
+      border-bottom: 2px solid #c90; }
       body main .contenedor .articuloDos .tituloDos {
-        font-size: 35px;
         color: #FC0;
+        font-size: 35px;
         font-family: fuentelotr;
-        padding: 5px;
-        text-align: center; }
-      body main .contenedor .articuloDos .imgDos {
-        width: 100%;
-        padding: 10px; }
+        text-align: center;
+        padding: 5px; }
       body main .contenedor .articuloDos p {
         color: white;
         padding: 15px;
@@ -263,12 +261,13 @@ body {
   color: white;
   font-size: 15px;
   text-align: center;
-  padding: 5px; }
+  padding: 5px;
+  margin: 15px; }
 
 /*↑↑↑ ESTILO TRILOGIA ↑↑↑*/
 /*↓↓↓ GALERIA ↓↓↓*/
 .contenedorGaleria {
-  background-image: linear-gradient(150deg, #fdfcfb 0%, black 100%); }
+  background-image: linear-gradient(150deg, #f3f3f3 0%, #86817f 10%, black 90%); }
   .contenedorGaleria .h1 {
     font-family: fuentelotr;
     padding: 15px;
@@ -297,18 +296,27 @@ body {
         background: #000;
         box-shadow: 5px 5px #fff;
         font-size: 20px;
-        color: #fff;
-        line-height: 28px; }
+        color: #fff; }
 
 @media screen and (max-width: 600px) {
   .materialbox-caption {
     width: 90%; }
+  body header .navbar .container-fluid img {
+    width: 10%; }
+  body header .navbar .container-fluid #nombrePag {
+    font-size: 16px;
+    width: 65%; }
   .galeria {
     display: inline-block; }
-  .tituloGaleria {
-    color: black; }
+  .contenedorGaleria {
+    background-image: linear-gradient(150deg, #cac7c7 0%, #86817f 10%, black 90%); }
+    .contenedorGaleria .h1 {
+      font-size: 32px; }
   .banner {
-    display: none; } }
+    display: none; }
+  .contenedorPersonajes table tr .zoom {
+    padding: 2px;
+    transform: none; } }
 
 @media screen and (max-width: 992px) {
   .materialbox-caption {
@@ -319,7 +327,14 @@ body {
     background-image: linear-gradient(gray, black);
     border-radius: 10px; }
   .banner {
-    display: none; } }
+    display: none; }
+  .navbar-toggler {
+    margin-right: 20px; }
+  nav {
+    line-height: 30px;
+    height: auto; }
+  button:focus {
+    background-color: rgba(255, 255, 255, 0); } }
 
 /*↑↑↑ GALERIA ↑↑↑*/
 /*↓↓↓ PERSONAJES ↓↓↓*/
@@ -332,7 +347,6 @@ body {
     text-align: center;
     margin: 15px; }
   .contenedorPersonajes table tr td {
-    border: 3 white solid;
     color: white;
     font-weight: lighter;
     text-align: center;
@@ -365,19 +379,31 @@ body {
     font-weight: bold;
     text-align: center;
     max-width: 400px;
-    margin: 20px;
     margin-bottom: 0; }
     .contenedorAcerca .form p {
       color: black; }
     .contenedorAcerca .form .mensaje {
       width: auto;
       margin: 5px; }
+    .contenedorAcerca .form .form-check {
+      margin: 0;
+      padding: 0; }
+      .contenedorAcerca .form .form-check .form-check-input {
+        margin: auto;
+        margin-top: 5px;
+        margin-right: 20px;
+        padding-left: 0;
+        float: none; }
+      .contenedorAcerca .form .form-check .masCincuenta {
+        margin-right: 36px; }
     .contenedorAcerca .form .botonUno {
       margin: 10px; }
     .contenedorAcerca .form .botonDos {
       margin: 10px; }
     .contenedorAcerca .form label {
       color: white;
-      font-size: 18px; }
+      font-size: 18px;
+      margin: auto; }
 
 /*↑↑↑ ACERCA ↑↑↑*/
+/*EXTEND*/
